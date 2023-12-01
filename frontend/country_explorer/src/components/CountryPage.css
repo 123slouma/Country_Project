@@ -1,44 +1,171 @@
-* {
-    box-sizing: border-box;
-  }
-  h1 {
-    text-align: center;
-  }
-  #main-container {
-    width: 502px;
-    margin: 30px auto;
-    padding: 0;
-  }
-  #flag-container {
-    height: 252px;
-    background-color: #fff;
-  }
-  #flag-container img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  #info-container select {
-    display: block;
-    margin: 20px auto;
-    padding: 5px;
-    min-width: 100%;
-    color: #333;
-    font-size: 15px;
-    font-weight: 900;
-    text-align-last: center;
-  }
-  #info-container p {
-    padding: 0 10px;
-    font-weight: 600;
-  }
-  #info-container p span {
-    font-weight: normal;
-  }
+.country-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24.5px;
+  padding: 20px;
+  background-color: #f1f0f0;
+  position: absolute;
+  top : 0;
+  bottom : 0;
+  left : 0;
+  right : 0;
+
   
-  @media (max-width: 768px) {
-    body { font-size: 12px; }
-    #main-container { width: 342px; }  
-    #flag-container { height: 172px; }  
-    #info-container select { font-size: 12px; font-weight: 600; }
-  }
+}
+
+.flag-name-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  direction : row;
+}
+
+.flag-image {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  margin-right : 1200px
+}
+
+h2 {
+  margin-left: 110px;
+  margin-top : -40px;
+  font-size: 20px;
+}
+
+.details-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-images {
+  display :flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.un-member-image {
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+}
+.status-image {
+  width: 80px;
+  height: 50px;
+  border-radius: 6px;
+
+}
+
+.un-member-text {
+  color: blue;
+  font-weight: bold;
+}
+
+
+.status-text {
+  color: red;
+  font-weight: bold;
+  
+}
+
+.details-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2px;
+}
+
+.details-grid .population {
+  font-weight: bold;
+}
+
+.details-grid .language {
+  font-weight: bold;
+}
+
+.details-grid .female {
+  font-weight: bold;
+  color : #a85c5c
+}
+
+.details-grid .male {
+  font-weight: bold;
+  color : rgb(82, 82, 168)
+}
+
+.details-grid .timezone {
+  font-weight: bold;
+}
+
+.details-grid .currencies {
+  font-weight: bold;
+  display : flex;
+  direction: row;
+  align-items: center;
+}
+.details-grid .independent {
+  font-weight: bold;
+}
+
+
+.grid-container {
+  width: calc(100% - 100px); /* Ajustez la largeur pour compenser les marges des éléments à l'intérieur */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 50px;
+  /* margin-top: -0.1%; <- Essayez de supprimer cette marge négative pour éviter le défilement */
+  /* padding-left: calc(100vw - 100%); <- Retiré pour éliminer le décalage */
+}
+
+
+
+.grid-item {
+  background-color: #cccc; /* Nouvelle couleur de fond de la grille */
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top : 50px;
+  box-shadow: 0 4px 8px rgba(168, 5, 5, 0.1);
+  height: 30px; /* Hauteur des éléments de la grille */
+  color: rebeccapurple;
+}
+
+.map-container {
+  display: flex;
+  direction: row;
+  gap : 200px;
+}
+
+.img-text-container{
+  display : flex;
+  align-items: center; 
+  direction: column;
+  gap : 20px
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the container to the viewport height */
+  background-color: #ded5d5; /* Background color for the loader container */
+}
+
+.MagnifyingGlass {
+  color: #3f51b5; /* Customize the color of the loader */
+  height: 100px; /* Set the height of the loader */
+  width: 100px; /* Set the width of the loader */
+  /* Add any other desired styles for the loader */
+}

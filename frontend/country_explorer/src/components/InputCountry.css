@@ -1,50 +1,41 @@
 .img-background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../map.png'); /* Ajoutez le chemin vers votre image de fond */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../map.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px; /* Adjust padding as needed */
+  box-sizing: border-box;
+}
+
+.input-container {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  margin-top: 20px; /* Add margin to separate from the background */
+}
+
+.input-container input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px; /* Adjust spacing between input and button */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.input-container button:hover {
+  background-color: #c4c9cd;
   
-  .input-container {
-    backdrop-filter: blur(5px); /* Appliquer le filtre de flou sur le contenu */
-    background-color: rgba(255, 255, 255, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
-    padding-top: 5%;
-    padding-left : 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .input-container input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  .input-container button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .input-container button:hover {
-    background-color: #0056b3;
-  }
-  
+}
